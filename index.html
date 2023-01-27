@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family:  Georgia,'Times New Roman', serif
+  padding: 10px;
+  background: #212f45;
+  color:#bcc6e2;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #272640;
+  
+  
+}
+#myDIV {
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(46, 175, 115);}
+}
+
+.header h1 {
+  font-size: 50px;
+  color:#307580;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #09434b;
+  color:#3e1f47;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #7a9292;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #0b525b;
+  color: rgb(161, 158, 158);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #212f45;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #0a464e;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #272640;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #272640;
+  margin-top: 20px;
+}
+.hidden {
+  visibility:hidden;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="Images/icon.png"width=250>
+ <div id=myDIV>
+  <h1>Music</h1>
+</div>
+  
+</div>
+
+<div class="topnav">
+  <a href="https://open.spotify.com/"> Spotify</a>
+  <a href="https://soundcloud.com/">Soundcloud</a>
+  <a href="https://www.deezer.com/us/">Deezer</a>
+  <a href="https://www.apple.com/apple-music/"> Apple Music</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>Listen to any genre you like!</p>
+      <p>We won't judge! listen to any band you like from these lists. Meet a community that will recommend you Artists!</p>
+      <img src="Images/hand.png" width=250>
+    </div>
+    <div class="card">
+      <h2>TOP TEN HIDDEN GEM BANDS YOU NEED TO LISTEN TO IN 2022</h2>
+      <h5>Nov 3, 2022</h5>
+      <img src="Images/headphonesblueback.jpg" width=300 > 
+      <p> I found 10 underrated bands you need to listen to in 2022!</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      
+      <p>I wanted to create a website for people to discuss different music and give reccommendations to one another </p>
+    </div>
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <div class="fakeimg"><p><img src="Images/headphonesblueback.jpg" width=140></p></div>
+      
+      <div class="fakeimg"><p><img src="Images/guitars.webp" width=140></p></div>
+      <div class="fakeimg"><p><img src="Images/guy.jpg"width=140></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank You for Visting!</h2>
+  <p class="hidden"> secret message</p>
+  <p>By: Aidan Fisher</p>
+  
+  
+
+</div>
+
+</body>
+</html>
